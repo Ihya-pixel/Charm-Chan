@@ -1,1 +1,556 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Charm Chan Accessories</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#fff3f6;
+  background-image:url("download.jpg");
+  background-size:cover;
+  background-attachment:fixed;
+  color:#7b4a57;
+}
+
+/* HEADER */
+
+header{
+  text-align:center;
+  padding:50px 20px;
+  background:rgba(255,255,255,0.75);
+  backdrop-filter:blur(5px);
+}
+
+/* FLEX HEADER */
+
+.header-flex{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:25px;
+  flex-wrap:wrap;
+  margin-bottom:20px;
+}
+
+/* LOGO */
+
+.logo{
+  width:220px;
+  height:220px;
+  object-fit:cover;
+  border-radius:50%;
+  border:8px solid #ffd5e0;
+  background:white;
+  padding:8px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* ELEMENT SAMPING */
+
+.side-element{
+  width:110px;
+  height:110px;
+  object-fit:contain;
+  background:transparent;
+
+  filter:
+  drop-shadow(0 6px 12px rgba(0,0,0,0.15));
+
+  transition:0.3s;
+}
+
+.side-element:hover{
+  transform:scale(1.08);
+}
+
+header h1{
+  font-size:60px;
+  color:#b83b62;
+  margin-bottom:10px;
+}
+
+/* NAVBAR */
+
+nav{
+  background:#ffdce6;
+  padding:20px;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav a{
+  text-decoration:none;
+  color:#b83b62;
+  margin:0 20px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+/* JUDUL */
+
+.judul{
+  text-align:center;
+  font-size:45px;
+  color:#b83b62;
+  margin-top:60px;
+  margin-bottom:20px;
+}
+
+/* CONTAINER */
+
+.container{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:35px;
+  padding:40px;
+}
+
+/* CARD */
+
+.card{
+  width:340px;
+  background:#fffafb;
+  border-radius:30px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  transition:0.3s;
+
+  display:flex;
+  flex-direction:column;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+/* FOTO */
+
+.card img{
+  width:100%;
+  height:340px;
+  object-fit:cover;
+  cursor:pointer;
+}
+
+/* KHUSUS BUNDLE */
+
+.bundle4 img{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+}
+
+/* CONTENT */
+
+.content{
+  padding:25px;
+  text-align:center;
+
+  display:flex;
+  flex-direction:column;
+
+  flex:1;
+}
+
+.content h2{
+  font-size:28px;
+  margin-bottom:15px;
+  color:#b83b62;
+}
+
+/* HARGA */
+
+.harga{
+  font-size:28px;
+  font-weight:bold;
+  color:#eb7f9d;
+  margin-bottom:15px;
+}
+
+/* UKURAN */
+
+.ukuran{
+  margin-bottom:20px;
+}
+
+.size{
+  display:inline-block;
+  background:#ffe0e8;
+  padding:10px 16px;
+  border-radius:20px;
+  margin:5px;
+  font-size:15px;
+}
+
+/* DESKRIPSI */
+
+.desc{
+  font-size:18px;
+  line-height:1.7;
+  margin-bottom:25px;
+}
+
+/* BUTTON */
+
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  background:#f5a9bd;
+  color:white;
+  padding:15px 30px;
+  border-radius:40px;
+  font-size:20px;
+  transition:0.3s;
+
+  margin-top:auto;
+}
+
+.btn:hover{
+  background:#de7998;
+}
+
+/* SECTION */
+
+.tentang,
+.payment,
+.kontak{
+  margin:50px;
+  padding:50px;
+  border-radius:30px;
+  text-align:center;
+}
+
+.tentang{
+  background:rgba(255,255,255,0.75);
+}
+
+.payment{
+  background:#ffe4ec;
+}
+
+.kontak{
+  background:#fff4f7;
+}
+
+.tentang h2,
+.payment h2,
+.kontak h2{
+  font-size:42px;
+  color:#b83b62;
+  margin-bottom:20px;
+}
+
+.tentang p,
+.payment p,
+.kontak p{
+  font-size:22px;
+  line-height:1.8;
+  margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+  text-align:center;
+  background:#ffd5e0;
+  padding:30px;
+  font-size:20px;
+  margin-top:50px;
+}
+
+/* MODAL */
+
+.modal{
+  display:none;
+  position:fixed;
+  z-index:9999;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.85);
+
+  justify-content:center;
+  align-items:center;
+}
+
+.modal img{
+  max-width:95%;
+  max-height:95%;
+  object-fit:contain;
+  border-radius:20px;
+}
+
+.modal.active{
+  display:flex;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  header h1{
+    font-size:42px;
+  }
+
+  .judul{
+    font-size:32px;
+  }
+
+  .card{
+    width:95%;
+  }
+
+  nav a{
+    display:block;
+    margin:10px 0;
+    font-size:18px;
+  }
+
+  .logo{
+    width:170px;
+    height:170px;
+  }
+
+  .side-element{
+    width:70px;
+    height:70px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="header-flex">
+
+    <!-- ELEMENT KIRI -->
+    <img src="strawberry.png"
+    class="side-element">
+
+    <!-- LOGO -->
+    <img src="Red Playful Gifts Logo 1.png"
+    class="logo">
+
+    <!-- ELEMENT KANAN -->
+    <img src="cat.png"
+    class="side-element">
+
+  </div>
+
+  <h1>𝐂𝐡𝐚𝐫𝐦 𝐂𝐡𝐚𝐧</h1>
+
+  <p style="
+  font-size:28px;
+  margin-top:15px;
+  color:#9b5b6d;
+  line-height:1.8;">
+
+  Welcome to Charm Chan (˶˃ ᵕ ˂˶) .ᐟ.ᐟ <br>
+
+  ♡ Klik foto produk untuk melihat detail lebih jelas ♡ <br>
+
+  ♡ Charm aesthetic dengan tema pastel, cute dan anime ♡ <br>
+
+  ♡ Ukuran dihitung dari ring pengait hingga aksesoris terpanjang ♡ <br>
+
+  Enjoy your shopping ( • ᴗ - ) ✧
+
+  </p>
+
+</header>
+
+<!-- NAV -->
+
+<nav>
+
+  <a href="#aesthetic">Ganci Aesthetic</a>
+  <a href="#anime">Ganci Anime</a>
+  <a href="#payment">Payment</a>
+  <a href="#kontak">Kontak</a>
+
+</nav>
+
+<!-- JUDUL -->
+
+<h2 class="judul" id="aesthetic">
+
+<span style="
+background:#f7dbe4;
+padding:14px 32px;
+border-radius:999px;
+box-shadow:0 6px 15px rgba(0,0,0,0.08);
+display:inline-block;">
+
+✨ 𝐆𝐚𝐧𝐭𝐮𝐧𝐠𝐚𝐧 𝐀𝐞𝐬𝐭𝐡𝐞𝐭𝐢𝐜 🎀
+
+</span>
+
+</h2>
+
+<!-- CONTAINER -->
+
+<section class="container">
+
+<!-- CARD -->
+
+<div class="card">
+
+<img src="@hakucharms on instagram.jpg"
+onclick="openModal(this.src)">
+
+<div class="content">
+
+<h2>Berry Cat Charm</h2>
+
+<p class="harga">
+
+<span style="
+text-decoration:line-through;
+color:#999;
+font-size:22px;
+margin-right:8px;">
+
+Rp15.000
+
+</span>
+
+Rp14.000
+
+</p>
+
+<div class="ukuran">
+
+<span class="size">Panjang 10 cm</span>
+<span class="size">Sisa 20 pcs</span>
+
+</div>
+
+<p class="desc">
+
+Gantungan kunci kucing lucu dengan strawberry
+dan detail pita aesthetic.
+
+</p>
+
+<a class="btn"
+href="https://wa.me/6281215375286">
+
+Pesan Sekarang
+
+</a>
+
+</div>
+</div>
+
+</section>
+
+<!-- PAYMENT -->
+
+<section class="payment" id="payment">
+
+<h2>💳 Metode Pembayaran</h2>
+
+<p>• QRIS</p>
+<p>• PayPal</p>
+<p>• Transfer Bank (BCA, Mandiri, BNI)</p>
+<p>• e-Wallet (Dana, GOpay, ShopeePay)</p>
+<p>• Tidak menerima COD</p>
+
+<h2 style="margin-top:40px;">📦 Cara Pemesanan</h2>
+
+<p>
+1. Klik tombol "Pesan Sekarang"
+untuk terhubung ke WhatsApp kami.
+</p>
+
+<p>
+2. Sampaikan nama produk,
+jumlah, dan alamat pengiriman.
+</p>
+
+<p>
+3. Kami akan mengirimkan rincian total harga
+(termasuk ongkir) dan metode pembayaran
+setelah anda memesan.
+</p>
+
+</section>
+
+<!-- KONTAK -->
+
+<section class="kontak" id="kontak">
+
+<h2>📱 Kontak Kami</h2>
+
+<p>WhatsApp : 081215375286</p>
+
+<p>Instagram : @charmchan.id</p>
+
+<p>Email : charmchanstore@gmail.com</p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 Charm Chan Accessories ♡
+
+</footer>
+
+<!-- MODAL -->
+
+<div class="modal"
+id="modal"
+onclick="closeModal()">
+
+<img id="modal-img">
+
+</div>
+
+<!-- SCRIPT -->
+
+<script>
+
+function openModal(src){
+
+document.getElementById('modal')
+.classList.add('active');
+
+document.getElementById('modal-img')
+.src = src;
+
+}
+
+function closeModal(){
+
+document.getElementById('modal')
+.classList.remove('active');
+
+}
+
+</script>
+
+</body>
+</html>
