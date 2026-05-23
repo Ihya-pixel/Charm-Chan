@@ -1,50 +1,13 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Charm Chan Accessories</title>
+  <title>Charm Chan Accessories</title>
 
-<style>
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
-}
-
-body{
-  background:#fff3f6;
-  background-image:url("download.jpg");
-  background-size:cover;
-  background-attachment:fixed;
-  color:#7b4a57;
-}
-
-/* HEADER */
-
-header{
-  text-align:center;
-  padding:50px 20px;
-  background:rgba(255,255,255,0.75);
-  backdrop-filter:blur(5px);
-}
-
-/* FLEX HEADER */
-
-.header-flex{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:25px;
-  flex-wrap:wrap;
-  margin-bottom:20px;
-}
-
-/* LOGO */
-
+  <style>
+/* LOGO BULAT */
 .logo{
   width:220px;
   height:220px;
@@ -56,312 +19,246 @@ header{
   box-shadow:0 8px 20px rgba(0,0,0,0.12);
 }
 
-/* ELEMENT SAMPING */
-
-.side-element{
-  width:110px;
-  height:110px;
-  object-fit:contain;
-  background:transparent;
-
-  filter:
-  drop-shadow(0 6px 12px rgba(0,0,0,0.15));
-
-  transition:0.3s;
+/* WRAP HEADER */
+.header-flex{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:25px;
+  flex-wrap:wrap;
+  margin-bottom:20px;
 }
+
+
 
 .side-element:hover{
   transform:scale(1.08);
 }
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
 
-header h1{
-  font-size:60px;
-  color:#b83b62;
-  margin-bottom:10px;
-}
+    body{
+      background:#fff3f6;
+      background-image:url("download.jpg");
+      background-size:cover;
+      background-attachment:fixed;
+      color:#7b4a57;
+    }
 
-/* NAVBAR */
+    header{
+      text-align:center;
+      padding:50px 20px;
+      background:rgba(255,255,255,0.75);
+      backdrop-filter:blur(5px);
+    }
 
-nav{
-  background:#ffdce6;
-  padding:20px;
-  text-align:center;
-  position:sticky;
-  top:0;
-  z-index:100;
-}
+    .logo{
+      width:230px;
+      margin-bottom:20px;
+    }
 
-nav a{
-  text-decoration:none;
-  color:#b83b62;
-  margin:0 20px;
-  font-size:22px;
-  font-weight:bold;
-}
+    header h1{
+      font-size:60px;
+      color:#b83b62;
+      margin-bottom:10px;
+    }
 
-/* JUDUL */
+    header p{
+      font-size:24px;
+    }
 
-.judul{
-  text-align:center;
-  font-size:45px;
-  color:#b83b62;
-  margin-top:60px;
-  margin-bottom:20px;
-}
+    nav{
+      background:#ffdce6;
+      padding:20px;
+      text-align:center;
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
 
-/* CONTAINER */
+    nav a{
+      text-decoration:none;
+      color:#b83b62;
+      margin:0 20px;
+      font-size:22px;
+      font-weight:bold;
+    }
 
-.container{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:35px;
-  padding:40px;
-}
+    .judul{
+      text-align:center;
+      font-size:45px;
+      color:#b83b62;
+      margin-top:60px;
+      margin-bottom:20px;
+    }
 
-/* CARD */
+    .container{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:35px;
+      padding:40px;
+    }
 
-.card{
-  width:340px;
-  background:#fffafb;
-  border-radius:30px;
-  overflow:hidden;
-  box-shadow:0 10px 25px rgba(0,0,0,0.1);
-  transition:0.3s;
+    .card{
+      width:340px;
+      background:#fffafb;
+      border-radius:30px;
+      overflow:hidden;
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
 
-  display:flex;
-  flex-direction:column;
-}
+    .card:hover{
+      transform:translateY(-10px);
+    }
 
-.card:hover{
-  transform:translateY(-10px);
-}
+    .card img{
+      width:100%;
+      height:340px;
+      object-fit:cover;
+    }
 
-/* FOTO */
+    .content{
+      padding:25px;
+      text-align:center;
+    }
 
-.card img{
-  width:100%;
-  height:340px;
-  object-fit:cover;
-  cursor:pointer;
-}
+    .content h2{
+      font-size:30px;
+      margin-bottom:15px;
+      color:#b83b62;
+    }
 
-/* KHUSUS BUNDLE */
+    .harga{
+      font-size:28px;
+      font-weight:bold;
+      color:#eb7f9d;
+      margin-bottom:15px;
+    }
 
-.bundle4 img{
-  width:100%;
-  height:auto;
-  object-fit:contain;
-}
+    .ukuran{
+      margin-bottom:20px;
+    }
 
-/* CONTENT */
+    .size{
+      display:inline-block;
+      background:#ffe0e8;
+      padding:10px 16px;
+      border-radius:20px;
+      margin:5px;
+      font-size:16px;
+    }
 
-.content{
-  padding:25px;
-  text-align:center;
+    .desc{
+      font-size:25px;
+      line-height:1.7;
+      margin-bottom:25px;
+    }
 
-  display:flex;
-  flex-direction:column;
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      background:#f5a9bd;
+      color:white;
+      padding:15px 30px;
+      border-radius:40px;
+      font-size:20px;
+      transition:0.3s;
+    }
 
-  flex:1;
-}
+    .btn:hover{
+      background:#de7998;
+    }
 
-.content h2{
-  font-size:28px;
-  margin-bottom:15px;
-  color:#b83b62;
-}
+    .tentang{
+      margin:50px;
+      padding:50px;
+      background:rgba(255,255,255,0.75);
+      border-radius:30px;
+      text-align:center;
+    }
 
-/* HARGA */
+    .tentang h2{
+      font-size:42px;
+      color:#b83b62;
+      margin-bottom:20px;
+    }
 
-.harga{
-  font-size:28px;
-  font-weight:bold;
-  color:#eb7f9d;
-  margin-bottom:15px;
-}
+    .tentang p{
+      font-size:28px;
+      line-height:1.9;
+    }
 
-/* UKURAN */
+    .payment{
+      margin:50px;
+      padding:50px;
+      background:#ffe4ec;
+      border-radius:30px;
+      text-align:center;
+    }
 
-.ukuran{
-  margin-bottom:20px;
-}
+    .payment h2{
+      font-size:42px;
+      color:#b83b62;
+      margin-bottom:25px;
+    }
 
-.size{
-  display:inline-block;
-  background:#ffe0e8;
-  padding:10px 16px;
-  border-radius:20px;
-  margin:5px;
-  font-size:15px;
-}
+    .payment p{
+      font-size:24px;
+      margin:12px 0;
+    }
 
-/* DESKRIPSI */
+    .kontak{
+      margin:50px;
+      padding:50px;
+      background:#fff4f7;
+      border-radius:30px;
+      text-align:center;
+    }
 
-.desc{
-  font-size:18px;
-  line-height:1.7;
-  margin-bottom:25px;
-}
+    .kontak h2{
+      font-size:42px;
+      color:#b83b62;
+      margin-bottom:25px;
+    }
 
-/* BUTTON */
+    .kontak p{
+      font-size:24px;
+      margin:15px 0;
+    }
 
-.btn{
-  display:inline-block;
-  text-decoration:none;
-  background:#f5a9bd;
-  color:white;
-  padding:15px 30px;
-  border-radius:40px;
-  font-size:20px;
-  transition:0.3s;
+    footer{
+      text-align:center;
+      background:#ffd5e0;
+      padding:30px;
+      font-size:20px;
+      margin-top:50px;
+    }
 
-  margin-top:auto;
-}
-
-.btn:hover{
-  background:#de7998;
-}
-
-/* SECTION */
-
-.tentang,
-.payment,
-.kontak{
-  margin:50px;
-  padding:50px;
-  border-radius:30px;
-  text-align:center;
-}
-
-.tentang{
-  background:rgba(255,255,255,0.75);
-}
-
-.payment{
-  background:#ffe4ec;
-}
-
-.kontak{
-  background:#fff4f7;
-}
-
-.tentang h2,
-.payment h2,
-.kontak h2{
-  font-size:42px;
-  color:#b83b62;
-  margin-bottom:20px;
-}
-
-.tentang p,
-.payment p,
-.kontak p{
-  font-size:22px;
-  line-height:1.8;
-  margin:10px 0;
-}
-
-/* FOOTER */
-
-footer{
-  text-align:center;
-  background:#ffd5e0;
-  padding:30px;
-  font-size:20px;
-  margin-top:50px;
-}
-
-/* MODAL */
-
-.modal{
-  display:none;
-  position:fixed;
-  z-index:9999;
-  left:0;
-  top:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.85);
-
-  justify-content:center;
-  align-items:center;
-}
-
-.modal img{
-  max-width:95%;
-  max-height:95%;
-  object-fit:contain;
-  border-radius:20px;
-}
-
-.modal.active{
-  display:flex;
-}
-
-/* RESPONSIVE */
-
-@media(max-width:768px){
-
-  header h1{
-    font-size:42px;
-  }
-
-  .judul{
-    font-size:32px;
-  }
-
-  .card{
-    width:95%;
-  }
-
-  nav a{
-    display:block;
-    margin:10px 0;
-    font-size:18px;
-  }
-
-  .logo{
-    width:170px;
-    height:170px;
-  }
-
-  .side-element{
-    width:70px;
-    height:70px;
-  }
-
-}
-
-</style>
+  </style>
+  
 </head>
 
 <body>
-
-<!-- HEADER -->
-
 <header>
 
   <div class="header-flex">
 
-    <!-- ELEMENT KIRI -->
-    <img src="strawberry.png"
-    class="side-element">
-
     <!-- LOGO -->
     <img src="Red Playful Gifts Logo 1.png"
     class="logo">
-
-    <!-- ELEMENT KANAN -->
-    <img src="cat.png"
-    class="side-element">
 
   </div>
 
   <h1>𝐂𝐡𝐚𝐫𝐦 𝐂𝐡𝐚𝐧</h1>
 
   <p style="
-  font-size:28px;
+  font-size:30px;
   margin-top:15px;
   color:#9b5b6d;
   line-height:1.8;">
@@ -380,177 +277,721 @@ footer{
 
 </header>
 
-<!-- NAV -->
+  <nav>
 
-<nav>
+    <a href="#aesthetic">Ganci Aesthetic</a>
+    <a href="#anime">Ganci Anime</a>
+    <a href="#payment">Payment</a>
+    <a href="#kontak">Kontak</a>
 
-  <a href="#aesthetic">Ganci Aesthetic</a>
-  <a href="#anime">Ganci Anime</a>
-  <a href="#payment">Payment</a>
-  <a href="#kontak">Kontak</a>
+  </nav>
 
-</nav>
-
-<!-- JUDUL -->
-
+  <!-- HEWAN -->
 <h2 class="judul" id="aesthetic">
 
-<span style="
-background:#f7dbe4;
-padding:14px 32px;
-border-radius:999px;
-box-shadow:0 6px 15px rgba(0,0,0,0.08);
-display:inline-block;">
+  <span style="
+  background:#f7dbe4;
+  padding:14px 32px;
+  border-radius:999px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.08);
+  display:inline-block;">
 
-✨ 𝐆𝐚𝐧𝐭𝐮𝐧𝐠𝐚𝐧 𝐀𝐞𝐬𝐭𝐡𝐞𝐭𝐢𝐜 🎀
+  ✨ 𝐆𝐚𝐧𝐭𝐮𝐧𝐠𝐚𝐧 𝐀𝐞𝐬𝐭𝐡𝐞𝐭𝐢𝐜 🎀
 
-</span>
+  </span>
 
 </h2>
 
-<!-- CONTAINER -->
+  <section class="container">
 
-<section class="container">
+    <div class="card">
 
-<!-- CARD -->
+      <img src="@hakucharms on instagram.jpg" onclick="openModal(this.src)">
+
+      <div class="content">
+
+        <h2>Berry Cat Charm</h2>
+
+             <p class="harga">
+      <span style="
+      text-decoration:line-through;
+      color:#999;
+      font-size:22px;
+      margin-right:8px;">
+      Rp15.000
+      </span>
+
+      Rp14.000
+    </p>
+
+        <div class="ukuran">
+         
+          <span class="size">Panjang 10 cm</span>
+          <span class="size">Sisa 20 pcs</span>
+          
+        </div>
+
+        <p class="desc">
+          Gantungan kunci kucing lucu dengan strawberry
+          dan detail pita aesthetic.
+        </p>
+
+        <a class="btn"
+        href="https://wa.me/6281215375286">
+        Pesan Sekarang
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="download (2).jpg" onclick="openModal(this.src)">
+
+      <div class="content">
+
+        <h2>Pastel Kitty Charm</h2>
+
+                <p class="harga">
+      <span style="
+      text-decoration:line-through;
+      color:#999;
+      font-size:22px;
+      margin-right:8px;">
+      Rp20.000
+      </span>
+
+      Rp18.000
+    </p>
+
+
+        <div class="ukuran">
+          
+          <span class="size">Panjang 12 cm</span>
+          <span class="size">Sisa 26 pcs</span>
+        </div>
+
+        <p class="desc">
+          Boneka kucing mini dengan manik-manik
+          pastel dan aksesoris lucu.
+        </p>
+
+        <a class="btn"
+        href="https://wa.me/6281215375286">
+        Pesan Sekarang
+        </a>
+
+      </div>
+
+    </div>
 
 <div class="card">
 
-<img src="@hakucharms on instagram.jpg"
-onclick="openModal(this.src)">
+      <img src="cat ndud.jpg" onclick="openModal(this.src)">
 
-<div class="content">
+      <div class="content">
 
-<h2>Berry Cat Charm</h2>
+        <h2>Brown Kitty Charm</h2>
 
-<p class="harga">
+        <p class="harga">Rp15.000</p>
 
-<span style="
-text-decoration:line-through;
-color:#999;
-font-size:22px;
-margin-right:8px;">
+        <div class="ukuran">
+        
+          <span class="size">Panjang 10 cm</span>
+          <span class="size">Sisa 18 pcs</span>
+        </div>
 
-Rp15.000
+        <p class="desc">
+          Tampil unik dan klasik dengan gantungan kucing cokelat
+           yang dipercantik manik-manik earth tone.
+        </p>
 
-</span>
+        <a class="btn"
+        href="https://wa.me/6281215375286">
+        Pesan Sekarang
+        </a>
 
-Rp14.000
+      </div>
 
-</p>
+    </div>
+<div class="card">
 
-<div class="ukuran">
+      <img src="cat pinguin.jpg" onclick="openModal(this.src)">
 
-<span class="size">Panjang 10 cm</span>
-<span class="size">Sisa 20 pcs</span>
+      <div class="content">
+
+        <h2>Penguin Kitty Charm</h2>
+
+        <p class="harga">Rp15.000</p>
+
+        <div class="ukuran">
+         
+          <span class="size">Panjang 10 cm</span>
+          <span class="size">Sisa 16 pcs</span>
+        </div>
+
+        <p class="desc">
+          Karakter kucing kostum penguin yang bikin tasmu makin stand out.
+        </p>
+
+        <a class="btn"
+        href="https://wa.me/6281215375286">
+        Pesan Sekarang
+        </a>
+
+      </div>
+
+    </div>
+<div class="card">
+
+      <img src="strawberry kitty.jpg" onclick="openModal(this.src)">
+
+      <div class="content">
+
+        <h2>Strawberry Kitty Charm</h2>
+
+        <p class="harga">Rp15.000</p>
+
+        <div class="ukuran">
+         
+          <span class="size">Panjang 10 cm</span>
+          <span class="size">Sisa 14 pcs</span>
+        </div>
+
+        <p class="desc">
+          Karakter kucing kostum stroberi yang bikin tasmu makin menawan.
+        </p>
+
+        <a class="btn"
+        href="https://wa.me/6281215375286">
+        Pesan Sekarang
+        </a>
+
+      </div>
+
+    </div>
+<div class="card">
+
+      <img src="Cake Strawberry.jpg" onclick="openModal(this.src)">
+
+      <div class="content">
+
+        <h2>Cake Strawberry Charm</h2>
+
+                <p class="harga">
+      <span style="
+      text-decoration:line-through;
+      color:#999;
+      font-size:22px;
+      margin-right:8px;">
+      Rp15.000
+      </span>
+
+      Rp14.000
+    </p>
+
+
+        <div class="ukuran">
+          
+          <span class="size">Panjang 10 cm</span>
+          <span class="size">Sisa 15 pcs</span>
+        </div>
+
+        <p class="desc">
+        Percantik harimu dengan gantungan 
+        bertema dessert stroberi yang manis dan penuh warna.
+        </p>
+
+        <a class="btn"
+        href="https://wa.me/6281215375286">
+        Pesan Sekarang
+        </a>
+
+      </div>
+
+    </div>
+<div class="card">
+
+      <img src="ribbon.jpg" onclick="openModal(this.src)">
+
+      <div class="content">
+
+        <h2>Couple Ribbon Charm</h2>
+
+                <p class="harga">
+      <span style="
+      text-decoration:line-through;
+      color:#999;
+      font-size:22px;
+      margin-right:8px;">
+      Rp25.000
+      </span>
+
+      Rp24.000
+    </p>
+
+
+        <div class="ukuran">
+          
+          <span class="size">Panjang merah & pink 10 cm</span>
+          <span class="size">Sisa 26 Set</span>
+        </div>
+
+        <p class="desc">
+        Tampil manis dan coquette dengan gantungan kunci couple ribbon
+         yang penuh warna dan detail aksesoris lucu.
+        </p>
+
+        <a class="btn"
+        href="https://wa.me/6281215375286">
+        Pesan Sekarang
+        </a>
+
+      </div>
+
+    </div>
+<div class="card">
+
+      <img src="Jellyfish keychain 🫧🪼.jpg" onclick="openModal(this.src)">
+
+      <div class="content">
+
+        <h2>Couple Jellyfish Charm</h2>
+
+        <p class="harga">
+      <span style="
+      text-decoration:line-through;
+      color:#999;
+      font-size:22px;
+      margin-right:8px;">
+      Rp30.000
+      </span>
+
+      Rp28.000
+    </p>
+
+        <div class="ukuran">
+          
+          <span class="size">Panjang pink 12 cm</span>
+          <span class="size">Panjang biru 10 cm</span>
+          <span class="size">Sisa 32 Set</span>
+         
+        </div>
+
+        <p class="desc">
+          Tampil estetik dengan detail ubur-ubur magis
+           yang sempurna untuk koleksi pribadi atau hadiah sahabat.
+        </p>
+
+        <a class="btn"
+        href="https://wa.me/6281215375286">
+        Pesan Sekarang
+        </a>
+
+      </div>
+
+    </div>
+    <script>
+
+function openModal(src){
+  document.getElementById('modal').classList.add('active');
+  document.getElementById('modal-img').src = src;
+}
+
+function closeModal(){
+  document.getElementById('modal').classList.remove('active');
+}
+
+</script>
+  </section>
+
+  <!-- ANIME -->
+
+  <h2 class="judul" id="anime">
+
+  <span style="
+  background:#f7dbe4;
+  padding:14px 32px;
+  border-radius:999px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.08);
+  display:inline-block;">
+
+  🌸 𝐆𝐚𝐧𝐭𝐮𝐧𝐠𝐚𝐧 𝐀𝐧𝐢𝐦𝐞 🍡
+
+  </span>
+
+</h2>
+
+  <section class="container">
+
+    <!-- GOJO -->
+
+    <div class="card">
+
+      <img src="gojo.jpg" onclick="openModal(this.src)">
+
+      <div class="content">
+
+        <h2>Satoru Gojo Charm</h2>
+
+        <p class="harga">Rp15.000</p>
+
+        <div class="ukuran">
+         
+          <span class="size">Panjang 10 cm</span>
+          <span class="size">Sisa 14 pcs</span>
+        </div>
+
+        <p class="desc">
+          Gantungan anime Gojo dengan tema silver
+          dan detail crystal aesthetic.
+        </p>
+
+        <a class="btn"
+        href="https://wa.me/6281215375286">
+        Pesan Sekarang
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- GETO -->
+
+    <div class="card">
+
+      <img src="jjk keychain geto.jpg" onclick="openModal(this.src)">
+
+      <div class="content">
+
+        <h2>Suguru Geto Charm</h2>
+
+        <p class="harga">Rp15.000</p>
+
+        <div class="ukuran">
+         
+          <span class="size">Panjang 10 cm</span>
+          <span class="size">Sisa 23 pcs</span>
+        </div>
+
+        <p class="desc">
+          Gantungan anime Geto dengan aksesoris
+          bintang dan pita transparan.
+        </p>
+
+        <a class="btn"
+        href="https://wa.me/6281215375286">
+        Pesan Sekarang
+        </a>
+
+      </div>
+
+    </div>
+
+  <!-- YUJI -->
+
+    <div class="card">
+
+      <img src="yuji.jpg" onclick="openModal(this.src)">
+
+      <div class="content">
+
+        <h2>Itadori Yuji Charm</h2>
+
+        <p class="harga">Rp15.000</p>
+
+        <div class="ukuran">
+      
+          <span class="size">Panjang 10 cm</span>
+          <span class="size">Sisa 18 pcs</span>
+        </div>
+
+        <p class="desc">
+          Gantungan anime Yuji dengan tema pink
+          pastel dan crystal aesthetic.
+        </p>
+
+        <a class="btn"
+        href="https://wa.me/6281215375286">
+        Pesan Sekarang
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- TOGE -->
+
+    <div class="card">
+
+      <img src="toge.jpg" onclick="openModal(this.src)">
+
+      <div class="content">
+
+        <h2>Inumaki Toge Charm</h2>
+
+        <p class="harga">Rp15.000</p>
+
+        <div class="ukuran">
+          
+          <span class="size">Panjang 10 cm</span>
+          <span class="size">Sisa 20 pcs</span>
+        </div>
+
+        <p class="desc">
+          Gantungan anime Toge dengan tema
+          silver blue aesthetic.
+        </p>
+
+        <a class="btn"
+        href="https://wa.me/6281215375286">
+        Pesan Sekarang
+        </a>
+
+      </div>
+
+    </div>
+
+  
+    <!-- YUTA -->
+
+    <div class="card">
+
+      <img src="Yuta Okkutsu.jpg" onclick="openModal(this.src)">
+
+      <div class="content">
+
+        <h2>Yuta Okkotsu Charm</h2>
+
+        <p class="harga">Rp15.000</p>
+
+        <div class="ukuran">
+      
+          <span class="size">Panjang 10 cm</span>
+          <span class="size">Sisa 26 pcs</span>
+        </div>
+
+        <p class="desc">
+          Gantungan anime Yuta dengan tema silver
+          black dan detail aesthetic.
+        </p>
+
+        <a class="btn"
+        href="https://wa.me/6281215375286">
+        Pesan Sekarang
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- BUNDLE GOJO GETO -->
+
+    <div class="card">
+
+      <img src="bundle gojo.jpg" onclick="openModal(this.src)">
+
+      <div class="content">
+
+        <h2>Gojo & Geto Bundle</h2>
+
+         <p class="harga">
+      <span style="
+      text-decoration:line-through;
+      color:#999;
+      font-size:22px;
+      margin-right:8px;">
+      Rp30.000
+      </span>
+
+      Rp27.000
+    </p>
+
+        <div class="ukuran">
+        <span class="size">Panjang 10 cm</span>
+          <span class="size">2 Character</span>
+          <span class="size">Gojo & Geto</span>
+          <span class="size">Ready Stock</span>
+        </div>
+
+        <p class="desc">
+          Paket bundle Gojo dan Geto dengan
+          aksesoris silver premium aesthetic.
+        </p>
+
+        <a class="btn"
+        href="https://wa.me/6281215375286">
+        Pesan Sekarang
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- KHUSUS FOTO BUNDLE BER4 -->
+
+<div class="card bundle4">
+
+  <img src="bundle ber4.jpg"
+  class="popup-img"
+  onclick="openModal(this.src)">
+
+  <div class="content">
+
+    <h2>JJK Bundle Set (Tanpa Yuji)</h2>
+
+    <p class="harga">
+      <span style="
+      text-decoration:line-through;
+      color:#999;
+      font-size:22px;
+      margin-right:8px;">
+      Rp60.000
+      </span>
+
+      Rp49.000
+    </p>
+
+    <div class="ukuran">
+        <span class="size">Panjang 10 cm</span>
+      <span class="size">4 Character</span>
+      <span class="size">Toge, Gojo, Geto, Yuta</span>
+      <span class="size">Ready Stock</span>
+
+    </div>
+
+    <p class="desc">
+      Bundle karakter anime
+      Jujutsu Kaisen
+      (Toge,Gojo,Geto&Yuta) tema silver pastel.
+    </p>
+
+    <a class="btn"
+    href="https://wa.me/6281215375286">
+    Pesan Sekarang
+    </a>
+
+  </div>
 
 </div>
 
-<p class="desc">
+<style>
 
-Gantungan kunci kucing lucu dengan strawberry
-dan detail pita aesthetic.
+/* FOTO ASLI */
+.bundle4 img{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  display:block;
+  cursor:pointer;
+}
 
-</p>
+/* POPUP FOTO */
+.modal{
+  display:none;
+  position:fixed;
+  z-index:9999;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.85);
 
-<a class="btn"
-href="https://wa.me/6281215375286">
+  justify-content:center;
+  align-items:center;
+}
 
-Pesan Sekarang
+/* FOTO DALAM POPUP */
+.modal img{
+  max-width:95%;
+  max-height:95%;
+  object-fit:contain;
+  border-radius:20px;
+}
 
-</a>
+/* AKTIF */
+.modal.active{
+  display:flex;
+}
 
-</div>
-</div>
-
-</section>
-
-<!-- PAYMENT -->
-
-<section class="payment" id="payment">
-
-<h2>💳 Metode Pembayaran</h2>
-
-<p>• QRIS</p>
-<p>• PayPal</p>
-<p>• Transfer Bank (BCA, Mandiri, BNI)</p>
-<p>• e-Wallet (Dana, GOpay, ShopeePay)</p>
-<p>• Tidak menerima COD</p>
-
-<h2 style="margin-top:40px;">📦 Cara Pemesanan</h2>
-
-<p>
-1. Klik tombol "Pesan Sekarang"
-untuk terhubung ke WhatsApp kami.
-</p>
-
-<p>
-2. Sampaikan nama produk,
-jumlah, dan alamat pengiriman.
-</p>
-
-<p>
-3. Kami akan mengirimkan rincian total harga
-(termasuk ongkir) dan metode pembayaran
-setelah anda memesan.
-</p>
-
-</section>
-
-<!-- KONTAK -->
-
-<section class="kontak" id="kontak">
-
-<h2>📱 Kontak Kami</h2>
-
-<p>WhatsApp : 081215375286</p>
-
-<p>Instagram : @charmchan.id</p>
-
-<p>Email : charmchanstore@gmail.com</p>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-© 2026 Charm Chan Accessories ♡
-
-</footer>
+</style>
 
 <!-- MODAL -->
-
-<div class="modal"
-id="modal"
+<div class="modal" id="modal"
 onclick="closeModal()">
 
-<img id="modal-img">
+  <img id="modal-img">
 
 </div>
-
-<!-- SCRIPT -->
 
 <script>
 
 function openModal(src){
-
-document.getElementById('modal')
-.classList.add('active');
-
-document.getElementById('modal-img')
-.src = src;
-
+  document.getElementById('modal').classList.add('active');
+  document.getElementById('modal-img').src = src;
 }
 
 function closeModal(){
-
-document.getElementById('modal')
-.classList.remove('active');
-
+  document.getElementById('modal').classList.remove('active');
 }
 
 </script>
+
+  </section>
+
+  <!-- TENTANG -->
+
+  <section class="tentang">
+
+    <h2>♡ Tentang Toko ♡</h2>
+
+    <p>
+      Charm Chan Accessories menyediakan berbagai
+      gantungan kunci aesthetic dengan desain lucu,
+      pastel, dan anime.
+      Cocok untuk tas, kunci, dompet, maupun koleksi pribadi.
+    </p>
+
+  </section>
+
+
+  <!-- PAYMENT -->
+
+  <section class="payment" id="payment">
+
+    <h2>💳 Metode Pembayaran</h2>
+    <p>• QRIS</p>
+    <p>• PayPal</p>
+  <p>• Transfer Bank (BCA, Mandiri, BNI)</p>
+    <p>• e-Wallet (Dana, GOpay, ShopeePay)</p>
+    <p> Tidak menerima COD (Cash on Delivery)</p>
+    <h2>📦 Cara Pemesanan</h2>
+    <p> 1. Klik tombol "Pesan Sekarang" untuk terhubung ke WhatsApp kami.</p>
+    <p> 2. Sampaikan nama produk, jumlah, dan alamat pengiriman.</p>
+    <p> 3. Kami akan mengirimkan rincian total harga (termasuk ongkir) dan metode pembayaran setelah anda memesan.</p>
+
+  </section>
+
+  <!-- KONTAK -->
+
+  <section class="kontak" id="kontak">
+
+    <h2>📱 Kontak Kami</h2>
+
+    <p>WhatsApp : 081215375286</p>
+
+    <p>Instagram : @charmchan.id</p>
+
+    <p>Email : charmchanstore@gmail.com</p>
+
+  </section>
+
+  <footer>
+
+    © 2026 Charm Chan Accessories ♡
+
+  </footer>
 
 </body>
 </html>
