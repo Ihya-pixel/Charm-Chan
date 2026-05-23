@@ -81,12 +81,22 @@
     }
 
     nav a{
-      text-decoration:none;
-      color:#b83b62;
-      margin:0 20px;
-      font-size:22px;
-      font-weight:bold;
-    }
+  text-decoration:none;
+  color:white;
+  background:#f5a9bd;
+  padding:12px 22px;
+  border-radius:999px;
+  font-size:20px;
+  font-weight:bold;
+  display:inline-block;
+  margin:8px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  background:#de7998;
+  transform:translateY(-2px);
+}
 
     .judul{
       text-align:center;
@@ -270,14 +280,18 @@
   }
 
   nav{
-    padding:15px 10px;
-  }
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+}
 
-  nav a{
-    display:inline-block;
-    margin:8px;
-    font-size:16px;
-  }
+nav a{
+  font-size:15px;
+  padding:10px 16px;
+  margin:0;
+  width:auto;
+}
 
   .judul span{
     font-size:24px;
