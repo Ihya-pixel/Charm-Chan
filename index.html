@@ -363,18 +363,39 @@ nav a{
   }
 
   .tentang h2,
-  .payment h2,
-  .kontak h2{
-    font-size:30px;
-  }
+.payment h2,
+.kontak h2{
+  font-size:22px;
+  line-height:1.4;
+}
 
   .tentang p,
-  .payment p,
-  .kontak p{
-    font-size:18px;
-    line-height:1.7;
+.payment p,
+.kontak p{
+  font-size:15px;
+  line-height:1.8;
+  text-align:left;
+}
+.payment p,
+.kontak p{
+  padding-left:5px;
+  word-break:break-word;
+}
+@media screen and (max-width:768px){
+
+  .tentang,
+  .payment,
+  .kontak{
+    text-align:left;
   }
 
+  .tentang h2,
+  .payment h2,
+  .kontak h2{
+    text-align:center;
+  }
+
+}
   footer{
     font-size:16px;
     padding:20px;
